@@ -21,15 +21,58 @@ body {
     flex-direction: column;
 }
 
-/* Styling slideshow & navbar */
-.navbar-container {
-    display: flex;
-    position: absolute;
+.body-text {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    font-weight: 500;
+    color: var(--dark-gray);
 }
 
-.desktop-navbar {
-    display: none;
+/* Styling navbar */
+.navbar-header-container {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    height: 10vh;
+    align-items: center;
 }
+
+.navbar-container {
+    display: none;
+    margin-left: auto;
+    padding-right: 2rem;
+}
+
+.navbar-list {
+    display: flex;
+    gap: 20px;
+    font-weight: 600;
+}
+
+.navbar-link {
+    list-style-type: none;
+    text-transform: lowercase;
+    font-size: 1.1rem;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 17.5px;
+}
+
+.hamburger-btn {
+    background-color: transparent;
+    border: none;
+    padding-left: 2rem;
+}
+
+.hamburger-img {
+    width: 25px;
+}
+
+/* Styling slides */
 
 .slide {
     display: flex;
@@ -53,22 +96,14 @@ body {
 .slide-text-container {
     display: flex;
     flex-direction: column;
-    flex: 50%;
+    flex: 35%;
     padding: 4rem 2rem 2.5rem 2rem;
-    text-align: left;
 }
 
 .slide-title {
     font-size: 2.25rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-}
-
-.slide-body {
-    font-size: 1.2rem;
-    line-height: 1.4rem;
     font-weight: 500;
-    color: var(--dark-gray);
+    margin-bottom: 1.5rem;
 }
 
 .shop-link {
@@ -88,4 +123,23 @@ body {
 .about-section {
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.about-section-container {
+    padding: 4rem 2rem;
+    flex: 33%;
+}
+
+.about-title {
+    text-transform: uppercase;
+    letter-spacing: .35rem;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.about-img {
+    flex: 33%;
 }
