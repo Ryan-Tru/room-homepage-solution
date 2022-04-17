@@ -157,7 +157,7 @@ body {
 }
 
 .arrow-icon {
-    padding-left: 25px;
+    margin-left: 25px;
 }
 
 .two, .three {
@@ -192,6 +192,7 @@ body {
 @media screen and (min-width: 768px) {
     .body-text {
         font-size: 1.25rem;
+        width: 600px;
     }
 
     /* Styling navbar */
@@ -268,8 +269,14 @@ body {
         margin-top: 2.5rem;
     }
 
-    .shop-link:hover {
+    /* .shop-link:hover{
         color: var(--dark-gray);
+    } */
+
+    .shop-link:hover > svg *,
+    .shop-link:hover {
+    fill: var(--dark-gray);
+    color: var(--dark-gray);
     }
 
     /* Slide img styling (desktop) */
@@ -289,6 +296,10 @@ body {
 
     .slide-btn-container {
         right: -126px;
+    }
+
+    .slideshow-arrow-btn:hover {
+        background-color: var(--dark-gray);
     }
 
     /* Styling about section */
