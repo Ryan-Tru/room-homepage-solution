@@ -300,6 +300,7 @@ body {
 
     .slideshow-arrow-btn:hover {
         background-color: var(--dark-gray);
+        cursor: pointer;
     }
 
     /* Styling about section */
