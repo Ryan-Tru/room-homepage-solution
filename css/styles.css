@@ -42,6 +42,7 @@ body {
     width: 100vw;
     height: 15vh;
     align-items: center;
+    z-index: 1;
 }
 
 .navbar-container {
