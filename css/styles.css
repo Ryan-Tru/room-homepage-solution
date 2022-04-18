@@ -300,6 +300,7 @@ body {
 
     .slide-btn-container {
         right: -126px;
+        z-index: 2;
     }
 
     .slideshow-arrow-btn:hover {
