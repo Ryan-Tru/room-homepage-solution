@@ -110,7 +110,7 @@ body {
 /* Styling slides */
 
 .slide {
-    display: flex;
+    display: none;
     flex-direction: column;
     height: 100vh;
 }
@@ -174,10 +174,6 @@ body {
 
 .arrow-icon {
     margin-left: 25px;
-}
-
-.three, .one {
-    display: none;
 }
 
 /* Styling about section */
