@@ -4,6 +4,15 @@
     /* Primary */
     --dark-gray: hsl(0, 0%, 63%);
     --very-dark-gray: hsl(0, 0%, 27%);
+
+
+    /* Display variables for JS */
+
+    --default-navbar-display: block;
+
+    --navbar-container-display: none;
+
+    --navbar-header-container-position: absolute;
 }
 
 *, ::before, ::after {
@@ -13,8 +22,8 @@
     box-sizing: border-box;
 }
 
-.no-display{
-    display: none;
+.navbar-header-container-active {
+    background-color: white;
 }
 
 a {
@@ -38,7 +47,7 @@ body {
 /* Styling navbar */
 .navbar-header-container {
     display: flex;
-    position: absolute;
+    position: var(--navbar-header-container-position);
     width: 100vw;
     height: 15vh;
     align-items: center;
@@ -46,7 +55,7 @@ body {
 }
 
 .navbar-container {
-    display: none;
+    display: var(--navbar-container-display);
     margin-left: auto;
     padding-right: 2rem;
     z-index: 1;
@@ -65,7 +74,7 @@ body {
 }
 
 .close-btn {
-    display: none;
+    display: var(--navbar-container-display);
     background-color: transparent;
     border: none;
     padding-left: 2rem;
@@ -78,6 +87,7 @@ body {
 }
 
 .logo {
+    display: var(--default-navbar-display);
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -86,6 +96,7 @@ body {
 }
 
 .hamburger-btn {
+    display: var(--default-navbar-display);
     background-color: transparent;
     border: none;
     padding-left: 2rem;
